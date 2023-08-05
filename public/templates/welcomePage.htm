@@ -1,0 +1,61 @@
+<div >
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                    <img src="images/appLogo.png" class="welcome-logo" alt="" onclick="imageSelectorFunction()">
+                    <a class="navbar-brand" href="#" focused>TRENDY Fashion Store</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <div class="navBar-item">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">                        
+                            <li class="nav-item active">
+                                <button onclick="imageSelectorFunction()" >About Us</button>
+                            </li>
+                            <li class="nav-item">
+                                <button>Help</button>
+                            </li>
+                            <li class="nav-item">
+                                <button>Contact Us</button>
+                            </li>                                                                            
+                            <li class="navbar-item">
+                                <button onclick="loadSelectedPage('login')">LogIn</button>
+                            </li>
+                            <li class="navbar-item">
+                                <button onclick="loadSelectedPage('signup')">Sign Up</button>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+            </div>    
+            <div class="welcomePage-body">
+                <div class="welcomePage-grid">
+                    <div class="welcomePage-grid-block"><img src="images/shopImage.png" alt=""></div>
+                    <div class="welcomePage-grid-block">
+                        <div><br><h1>Let's Start Shopping</h1><br>
+                        <p> TRENDY fashion store - Single destination for all, lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. <span id="dots">...</span><span id="more">In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="readMore()" id="myBtn">Read More</button>
+                        </div>
+                        <div class="social-icons">
+                            <a href="callto:08179191999" class="fa fa-phone"></a>
+                            <a href="mailto:support@nareshit.com" class="fa fa-envelope"></a>
+                            <a href="https://www.instagram.com/nareshitech/" class="fa fa-instagram"></a>
+                            <a href="https://www.facebook.com/nareshit/" class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/nareshitech" class="fa fa-twitter"></a>
+                            <span class="chatLink">Chat with Support team</span>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+<div class="chatContainer">
+    <div class="msgblock">
+        <div class="closeButton" onclick="closeBox()">X</div>
+    </div>
+    <hr>
+    <div class="btnblock">
+        <input type="text" id="userMsg">
+        <input type="button" value="Send" onclick="sendMessage()" id="btnChatBox">
+    </div>
+</div>

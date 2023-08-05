@@ -1,0 +1,782 @@
+*{
+    font-family:"poppins";
+}
+body {
+    background:linear-gradient(to right top, rgb(204, 204, 240), rgb(245, 204, 204));
+     /* rgb(216, 112, 112); */
+}
+.appLogo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.headSection {
+    padding: 5px;    
+    height: 85px;
+    background-image: linear-gradient(blue, aqua);
+    box-shadow: 2px 2px 2px 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSection, .rightSection{
+    display: flex;
+}
+
+.leftSection{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftSection .cartIcon{
+    margin: 0px 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.loginIcon{
+    border: 1px solid;
+    padding: 7px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(150, 99, 6);
+    margin-right: 5px;
+}
+.showUserIcon{
+    width: 97px;
+    position: absolute;
+    left: 92%;
+    top: 55px;
+    background-color: rgb(248, 227, 187);
+    height: 89px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #1b34ed;
+    display: flex;
+    flex-direction: column;
+}
+.showUserIconDiv{
+    display: none;
+}
+
+.showUserIcon i
+{
+    font-size: 27px;
+    margin-top: 5px;
+    color: rgb(238, 163, 163);
+}
+#logoutSpan{
+    font-size: 15px;
+    color: #0e0ee1;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+#userValue{
+    color: rgb(34, 2, 53);
+}
+hr{
+    margin-left: 2px !Important ;
+    margin-top: 10px;
+    width:90px;
+    color: red
+}
+#cartCount{
+    position: absolute;
+    right: 14px;
+    top: 22px;
+    color: #e10a0a;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    background-color: #f5f10c;
+    padding: 0px 1px;
+    line-height: 15px;
+    font-weight: bolder;
+}
+/*searchbar css start*/
+
+.search{
+    background-color: white;
+    width: 450px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    align-self: center;
+    /* display: flex; */
+    margin-left: 10px;
+}    
+
+.search input{
+    border: none;
+    padding-left: 9px;
+    margin-left: 10px;
+    margin-right: 2px;
+    width:90%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+ .search .magnify_glass{
+    color: green;
+    align-self: center;
+ }
+/*searchbar css end*/
+
+
+.pageMainBlock {
+    min-height: 620px;
+    background-color: white;
+    margin-top: -11px;
+    
+}
+
+.appTitle {
+    color: #360317;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    width:100px;
+    display: inline;
+    line-height: 13px;
+    font-family: 'monospace';
+}
+.appTitle span{
+ color: rgb(235, 231, 225);
+ font-size: 11px;
+}
+.loginBlock {
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 28px 2px #131717;
+    min-height: 500px;
+    width:500px;
+    background-color: white;
+    position: relative;
+    top: 65px;
+    
+}
+/* .loginBlock {
+    border: 0px solid #ccc;
+    
+    margin: 0px auto;
+    border-radius: 10px;
+
+    height: 500px;
+    width:500px;
+    
+    position: relative;
+    top: 65px;
+    z-index: 1;
+    overflow: hidden;   
+} */
+/* ================================== neon light effect css start ================== */
+/* .loginBlock::after {
+    content: '';
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 370px;
+	transform-origin: top left;
+	background: linear-gradient(0deg,red, transparent);
+	animation: animate 4s linear infinite;
+
+} */
+/* .loginBlock::before {
+    content: '';
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 370px;
+	transform-origin: top left;
+	background: linear-gradient(0deg,red, transparent);
+	animation: animate 4s linear infinite;
+    animation-delay: -2s;
+<<<<<<< Updated upstream
+} */
+.loginPageContainer {
+=======
+}
+.neonClass {
+>>>>>>> Stashed changes
+	position: absolute;
+    inset: 3px;
+	background: white;
+    z-index: 3;
+    width: 494px;
+    border-radius: 10px;
+}
+/* @keyframes animate { 
+    0% {
+            transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+} */
+
+/* ======================================  neon light effect css  end   ===================== */
+.loginBlock::after  {
+    content: '';
+
+}
+.loginBlock li {
+    list-style: none;
+    margin: 10px;
+}
+
+#loginBtn{
+    width:100%;
+    text-align: center;
+}
+.heading{
+    font-size: 30px;
+    color: #120657;
+    margin-bottom: 5px;
+}
+/*css for userId and password input controls*/
+.listAlignment{
+    display: flex;
+    flex-direction: column;
+}
+.spanColor{
+    color: rgb(250, 4, 4);
+}
+
+.listAlignment input{
+    height: 28px;
+    width: 95%;
+    border: 1px solid #648595;
+}
+
+.listAlignment div{
+    display: flex;
+}
+
+.labelText{
+    color: #343434;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+.input-control{
+    outline: none;
+    border-radius: 3px;
+    padding-left: 6px;
+}
+
+.input-control:focus{
+    color: #464040;
+    border-color:rgb(4, 4, 131) ;
+    box-shadow: 0 0 15px rgb(109, 109, 196);
+}
+
+/*.showPass i{
+    position: absolute;
+    right: 10%;
+    top: 124px;
+  }*/
+/*css for userId and password input controls end*/
+
+/* Captcha CSS */
+.captchBox{
+    color:#555;
+    text-align:center;
+    border:1px solid #648595;
+    background-color: rgb(244, 249, 252);
+    font-family:Arial;
+    line-height: 36px;
+    height: 41px;
+    letter-spacing: 8px;
+    font-size: 24px;
+    /* font-weight: bold; */
+    user-select: none;
+    margin-right: 2px;
+}
+
+.captchInputDiv img{
+    width: 35px;
+    height: 29px;
+    background:#83a6f5;
+    border: 1px solid #c1b2b2;
+}
+
+#captchInputBox{
+    width:240px;
+    margin-left: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    height: 30px;
+    background: #e2d4d4;
+    border: none;
+    outline: none;
+}
+.captchInputDiv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+}
+/* Captcha CSS */
+
+.invalidCredential {
+    text-align: center;
+    font-size: 13px;
+    color: red;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.pdetailsBlock {
+    display: grid;
+    grid-template-columns: 200px auto;
+    column-gap: 2px;
+}
+
+.categoryList {
+       min-height: 500px;
+       margin-top: 5px;
+       background: #e4edf5;
+}
+.categoryListNavbar{
+    padding-left: 1px;
+}
+
+.categoryList li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    /* border: 1px solid; */
+    color: white;
+    background-color: #0076CE;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+.categoryList li:hover {
+    background-color: #6050DC;
+    /* #eeb9b9; */
+    cursor: pointer;
+}
+
+.productImage{
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    border: 1px solid #f1e8e8;
+    border-radius: 7px;
+}
+
+/*================= footer part =========*/
+.footer-container {
+    /* background: linear-gradient(rgb(253 251 247), #d87070); */
+    background-color: #020d29;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+}
+.col {
+    text-align: left;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.footerSocialLink{
+    margin-top: 12px;
+}
+
+.footer-logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 20%;
+}
+.col li:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.divider {
+    margin-left: 20% ;
+    margin-right: 20%;
+}
+hr {
+    margin: 0px;
+    opacity: .5;
+}
+.copy {
+    text-align: center;
+    padding: 2.5px;
+    margin: 2.5px;
+    color: #f1e4e4;
+}
+.col li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.fa {
+  padding: 0px;
+  margin: 5px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+li a:first-child {
+    margin-left: 0px;
+}
+.fa:last-child {
+    margin-left: 10px;
+}
+
+.welcome-logo{
+    width: 50px;
+    height: 50px;
+}
+.navBar-item{   
+    margin-left: 20%;                                
+    
+}
+.navbar-brand {
+    cursor: default;
+    font-size: 30px;
+    color: rgb(216, 112, 112);
+}
+
+.navBar-item ul li button {
+    border: 2px none;
+    border-radius: 40px;                
+    margin-left:10px ;            
+    margin-right: 10px;
+    width: 100px;
+    text-transform: capitalize;
+    color: rgb(216, 112, 112);
+    background-color: white;
+}
+.navBar-item ul li button:hover {
+    border: 2px ;
+    border-radius: 40px;                
+    margin-left:10px ;            
+    margin-right: 10px;
+    width: 100px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    background-color: rgb(216, 112, 112);
+}
+
+.welcomePage {                
+    background-color: white;                
+    position: relative;
+    width: 100%;
+    top: 50px;
+    bottom: 50px;
+    
+    
+}
+.main-header-part {
+    display: none;
+}
+
+.welcomePage-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 50px;
+    column-gap: 80px;
+    
+}
+.welcomePage-grid-block {
+    margin: 0px auto;                
+    width: 450px;            
+    height: 430px;
+    border: 0px solid;                
+    color: rgb(216, 112, 112);
+}
+.welcomePage-grid-block:last-child {
+    width: 550px;
+}
+.welcomePage-grid-block img {
+    width: 400px;
+    height: fit-content;
+}
+#more {display: none;}
+#myBtn {border: none; margin: 2px; padding: 2px; background-color: white; color: rgb(216, 112, 112); border-radius: 40px; width: 100px;}
+#myBtn:hover {border: none; margin: 2px; padding: 2px; background-color: rgb(216, 112, 112); color:white;border-radius: 40px; width: 100px;}
+.social-icons a{
+    margin: 10px;
+    background-color: white;
+    color: rgb(216, 112, 112);
+    width: fit-content;                
+}
+.social-icons {
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+}
+.footer-divider {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(216, 112, 112);
+    margin-bottom: 20px;
+}
+
+/*product binding css*/
+#productDetailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #dbf0fa;
+    margin-top: 5px;
+}
+#productDetailsContainer > ul {
+    width: 298px;
+    /* box-shadow: 5px 5px 5px #ccc; */
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding: 10px;
+    word-wrap: break-word;
+    border: 1px solid #ada6a6;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-left: 4px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#addButtonLi{
+align-self: flex-end;
+
+}
+
+.addProduct{
+    color: blue;
+    background-color: #ccc;
+    border: none;
+}
+.addProduct:hover{
+    background-color: rgb(107, 107, 236);
+    color: #fdf2f2;
+    border: none;
+    cursor: pointer;
+}
+.productImage img {
+    width: 120px;
+    height: 130px;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/*individual product css*/
+.productName{
+    font-size: 17px;
+    color: rgb(6, 6, 122);
+    padding-top: 5px;
+    /* font-family: "Consolas"; */
+}
+
+.productDesc, .productRatings{
+    font-size: 15px;
+    font-weight: bold;    
+}
+
+.productDesc+p{
+    font-size: 10px;    
+    color: rgb(85, 5, 85); 
+}
+
+.productRatings{
+    color: rgb(233, 7, 7);
+}
+
+
+
+.ratingImg {
+    width: 80px;
+    height: 20px;
+}
+
+
+/*sign up div css*/
+
+.query{
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+
+.loginLink{
+    border: none;
+    text-decoration: none;
+    font-style: italic;
+    color: blue;
+    cursor: pointer;
+}
+
+.query>p{
+    font-size: 15px;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+#singUpBtn{
+    width: 95%;
+}
+
+.disableBtn{
+    opacity: 0.7 !important;
+    cursor:not-allowed !important;
+    background-color:#81aef3 !important;
+    border: none !important;
+}
+
+#forgotPWD{
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 8px;
+    align-self: flex-end;
+}
+/*sign up div css*/
+.addNewProduct li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+
+.addNewProduct {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.productTitle {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.logoutLink {
+    text-align: right;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* foldable button */
+.loginButton {
+    position: relative;
+    font-size: 1.0em;
+    padding: 0.7em 1.4em;
+    background-color: #317def;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em #0000004d;
+}
+.loginButton::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #212121 0%, #212121 50%, #317def 50%, #317def 60%);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em #0000004d;
+    transition: 0.3s;
+}
+.loginButton:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+}
+.loginButton:active {
+    box-sizing: 0.2em 0.2em 0.3em #0000004d;
+    transform: translate(0.1em, 0.1em);
+}
+
+/*  CSS for chat container*/
+.chatContainer {
+    display: none;
+    border: 1px solid;
+    right: 20px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.btnblock {
+    height: 50px;
+    margin: 5px;
+}
+.chatLink {
+    cursor: pointer;
+}
+
+.btnblock input {
+    height: 39px;    
+    border:1px solid #7a7575;
+    border-radius: 5px;
+}
+
+#btnChatBox{
+  background-color: rgb(245, 242, 242);
+  color: rgb(134, 66, 66);
+  width:70px;
+  font-weight:600;
+}
+
+#btnChatBox:hover{
+    color: rgb(247, 233, 233);
+    background-color: rgb(216, 112, 112);
+  }
+
+.msgblock  {
+    height: 290px;
+    margin: 5px;
+}
+.sentMsg {
+    color: green;
+    margin: 5px;
+}
+.receiveMsg {
+    color: maroon;
+    margin: 5px;
+    text-align: right;
+}
+
+/* End of chat block css*/
+
+.closeButton{
+    position: relative;
+    left: 266px;
+    border: 1px solid #e2dfdf;
+    border-radius: 2px;
+    width: 23px;
+    color: rgb(216, 112, 112);
+    text-align: center;
+    cursor: pointer;
+}
+
+

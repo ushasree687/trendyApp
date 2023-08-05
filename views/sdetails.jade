@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  h3 Student Detials List
+  p#test.abc   Hello every one  
+    
+  for data in sData
+    ul(id="test" class="sample") 
+        li Name: #{data.name} 
+        li Age: #{data.age}
+        li Gender: #{data.gender}
+        li Address: #{data.address.dno}
+

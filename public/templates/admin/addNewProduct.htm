@@ -1,0 +1,47 @@
+<div class="container addNewProduct">
+    <form action="#" method="POST">
+        <ul>
+            <li class="productTitle">
+                Product Details
+            </li>
+            <li>
+                <input required type="text" class="form-control" placeholder="Product Id" id="pid">
+            </li>
+            <li>
+                <input required type="text" class="form-control" placeholder="Title" id="ptitle">
+            </li>
+            <li>
+                <input  required type="text" class="form-control" placeholder="Price" id="pprice">
+            </li>
+            <li>
+                <textarea  required class="form-control" placeholder="Description" id="pdesc" cols="30" rows="10"></textarea>    
+            </li>
+            <li>
+                <select id="pcategory" class="form-control">
+                    <option value="Electronics">Electronics</option>
+                    <option value="Men's clothing">Men's clothing</option>
+                    <option value="Jewelery">Jewelery</option>
+                    <option value="Women's clothing">Women's clothing</option>
+                    <option value="Watches">Watches</option>
+                </select>
+            </li>
+            <li>
+                <!-- <input required class="form-control" type="text" id="pimage" placeholder="Product Image"> -->
+                <form method ="POST" enctype="multipart/form-data">
+                    <input type="file" name="prodImage">
+                    <input type="button" value="Upload Image" onclick="uploadResource()">
+                </form>
+            </li>
+            <li>
+                <input class="form-control" type="text" id="prating" placeholder="Product Rating">
+            </li>
+            <li>
+                <input type="reset" value="Rest" class="btn btn-secondary">
+                <input type="button" value="Add Product" class="btn btn-secondary" onclick="addNewProductDetails()">
+            </li>
+            <li id="pdetailsSuccmsg">
+
+            </li>
+        </ul>
+    </form>
+</div>

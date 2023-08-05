@@ -1,0 +1,53 @@
+<div class="loginBlock" >
+    <div class="container neonClass">
+        <ul>
+            <li class="text-center heading">Sign Up</li>
+            <li class="listAlignment">
+                <div>
+                    <label class="labelText">User Name</label>
+                    <span class="spanColor">*</span>
+                   </div>
+                <input type="text" class="input-control" placeholder="User Id" id="uId" onmouseleave="checkUserIdField();"> 
+                <span class="alertColor userNameMsg">User Name is mandatory.</span>               
+            </li>
+            <li class="listAlignment">
+                <div>
+                    <label class="labelText">Password</label>
+                    <span class="spanColor">*</span>
+                   </div>
+                <input type="password" placeholder="Account Password" id="upassword" class="input-control" onmouseleave="checkPasswordField();">
+                <i class="fa-solid fa-eye-slash" id="togglePassword" onclick="togglePWD(upassword,togglePassword);"></i>
+                <span class="alertColor passwordMsg"></span>
+            </li>
+            <li class="listAlignment">
+                <div>
+                    <label class="labelText">Confirm Password</label>
+                    <span class="spanColor">*</span>
+                   </div>
+                <input type="password" class="input-control" placeholder="Re-enter Account Password" id="confirmPWD" onmouseout="checkConfirmPassword();">
+                <i class="fa-solid fa-eye-slash" id="toggleConPassword" onclick="togglePWD(confirmPWD,toggleConPassword);"></i>
+                <span class="alertColor confirmPasswordMsg">Confirm Password is required</span>                
+            </li>
+           <li class="listAlignment">
+               <div>
+                <label class="labelText">Email Id</label>
+                <span class="spanColor">*</span>
+               </div>
+                <input type="text" class="input-control" placeholder="Enter account mail id" id="umailId" onmouseout="validateMailId()">
+                <span class="alertColor mailMsg">Email Id is mandatory.</span>               
+           </li>
+           <li>
+            <input type="checkbox" id="checkboxId" onclick="validateInputFields()"> 
+            <label class="labelText">I want to register</label>
+           </li>
+           <li>
+            <input class="btn btn-primary disableBtn" id="singUpBtn" type="button" value="Register" onclick="registerNewUser()" disabled>
+            <div class="query">
+                Already A Member? <a target="_blank" onclick="loadSelectedPage('login')" class="loginLink">Login Here</a>
+              </div>
+           </li>
+           <li id="rblock">
+           </li>
+        </ul>
+    </div>
+</div>

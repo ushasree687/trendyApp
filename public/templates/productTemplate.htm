@@ -1,0 +1,25 @@
+<!-- <div> -->
+    <ul class="ProductUl">
+        <li class="productImage">
+            <img src="{{image}}" alt="">
+        </li>
+        <li>
+         <label class="productName">{{title}}</label>
+         
+        </li> 
+        <!-- <li>
+         <label class="productDesc">Description:</label>
+         <p>{{description}}</p>
+        </li> -->
+        <li>
+          <label class="productRatings">Price:
+            ₹{{price}}</label>
+       </li>
+        <li>Ratings:{{rating.rate}}</li>
+        <li id="rating_{{id}}">
+        </li>
+        <li id="addButtonLi" class="d-flex justify-content-end align-items-end">
+            <button id="{{_id}}" class="btn btn-primary addProduct" onclick="getProductId('{{id}}')">Add</button>
+        </li>
+    </ul>    
+<!-- </div> -->

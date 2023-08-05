@@ -1,0 +1,51 @@
+    <div class="loginBlock" onload="getCaptcha()">
+        <div class="container loginPageContainer neonClass">
+            <ul>
+                <li class="text-center heading">Sign In</li>
+                <li class="query">                    
+                    Don't Have an account yet? <a href="#newSignup" onclick="loadSelectedPage('signup')">Click Here To Register</a>                  
+                </li>
+                <li class="listAlignment">
+                    <div>
+                     <label class="labelText">Email</label>
+                     <span class="spanColor">*</span>
+                    </div>
+                  
+                    <input type="text" id="uid" class="input-control" placeholder="User Id">
+                    
+                </li>
+                <li class="listAlignment">
+                    <div>
+                    <label class="labelText">Password</label>
+                    <span class="spanColor">*</span>
+                    </div>
+                    <input type="password" class="input-control" placeholder="Account Password" id="accountPwd">
+                    <i class="fa-solid fa-eye-slash" id="togglePassword" onclick="togglePWD(accountPwd,togglePassword);"></i>
+                </li>
+                <li>
+                    <input type="checkbox" id="userDecision" onclick="remeberPassword()"> 
+                    <label class="labelText">Remember by Login Details</label>
+                </li>
+                <li>
+                    <label class="labelText">Enter Captcha</label>
+                    <div class="captchBox"></div>
+                    <div class="captchInputDiv">
+                     <input id="captchInputBox" class="userCapchaText" type="text" placeholder="Enter captcha text" onkeyup="validateCapchaText()">
+                     <img src="../images/refreshBtn.png" onclick="getCaptcha()">                                               
+                    </div>
+                </li>
+                <li>
+                    <input type="button" value="Login" class="btn btn-primary disableBtn" disabled id="loginBtn" onclick="validateUserDetails(); remeberPassword();">
+                </li>
+                
+                <li class="query d-flex justify-content-end">
+                    <a href="#forgotPwd" id="forgotPWD" onclick="loadSelectedPage('frgtPwd')">Forgot Password</a>                      
+                    <!-- <a href="#newSignup" class="link-underline-primary" onclick="loadSelectedPage('signup')">New User ?</a> -->
+                    <!-- <a href="#forgotPwd" onclick="loadSelectedPage('frgtPwd')" class="link-underline-primary">Forgot Password</a> -->
+                </li>
+                <li class="invalidCredential">
+                    <span id="errorMsg">User details are invalid</span>
+                </li>
+            </ul>
+        </div>
+    </div>

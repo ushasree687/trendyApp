@@ -1,0 +1,21 @@
+
+/*login input controls css*/
+.alertColor{
+    color: red;
+    font-size: 13px;
+}
+
+.userNameMsg, .passwordMsg, .confirmPasswordMsg, .mailMsg{
+    display: none;
+}
+
+.alertBorder{
+    border-color: red !Important ;
+}
+
+#togglePassword,#toggleConPassword{
+    margin-left: 371px;
+    margin-top: -22px;
+    margin-bottom: 5px;
+}
+

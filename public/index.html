@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/favicon_cart.PNG">
+        <title>Trendy Fashion Store - Single Destination for all</title>
+        <link rel="stylesheet" href="External_dependencies/bootstrap/dist/css/bootstrap.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/singUp.css">
+        <link rel="stylesheet" href="css/neonEffect.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+        <script src="https://kit.fontawesome.com/ea84cddbc6.js" crossorigin="anonymous"></script>
+        <script src="External_dependencies/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="javascripts/lib/jquerymini.js"></script>
+        <script src="javascripts/lib/handlebars.js"></script>
+        <script src="javascripts/utils.js"></script>
+        <script src="javascripts/main.js"> </script>
+        <script src="javascripts/login.js"></script>
+        <script src="javascripts/signup.js"></script>
+        <script src="javascripts/addNewProduct.js"></script>
+        <script src="javascripts/chatSupport.js"></script>
+        <script src="javascripts/addProductCart.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container welcomePage">
+            <!--==================container for welcome page-->            
+        </div>
+        <div class="container-fluid main-header-part">
+            <header class="headSection">
+                <div class="rightSection">
+                    <img src="images/appLogo.png" class="appLogo" onclick="loadWelcomePage()">
+                    <p class="appTitle"><span>Shop @Trendy</span> Fashion Store</p>
+                    <div class="search">                
+                        <input type="search" placeholder="search for products">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass magnify_glass"></i>               
+                    </div>
+                </div>
+                <div class="leftSection">
+                    <i class="fa-solid fa-user loginIcon" onclick="showUserIcon();"></i>
+                  <i class="fa-sharp fa-solid fa-cart-shopping cartIcon"></i>
+                </div>
+                <div id="cartCount">0</div>
+                <div class="showUserIcon showUserIconDiv" id="showUserIconDiv" onhover="showUserIcon();">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="userValue"></span>
+                    <hr/>
+                    <span id="logoutSpan" onclick="logoutSession()">Logout</span>
+                </div>
+            </header>
+            <main class="pageMainBlock"> </main>  <!--==== container for login and other page-->
+            <footer class="footer-container">                
+            </footer>
+        </div>
+        
+    </body>
+</html>
